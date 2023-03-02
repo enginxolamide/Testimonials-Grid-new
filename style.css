@@ -52,14 +52,7 @@ min-height: 80vh;
  
 }
 
-.inner-container>:nth-child(n):hover{
-  z-index: 3;
-  transform: scale(1.03);
-  position: relative;
- background-color: #35373f;
-  box-shadow: 1px 3px #4D505C;
-
-}
+/* Hover-effect */
 .inner-container>:nth-child(n):hover{
   z-index: 3;
   transform: scale(1.03);
@@ -74,33 +67,8 @@ min-height: 80vh;
   color: #ffffff;
  }
 
-.card-1 {
-  grid-column: span 2;
-}
 
-.card-2 {
-  grid-column: span 1;
-
-
-
-}
-.card-3 {
- 
-  grid-row: span 2;
- 
- 
- }
-.card-4 {
-  grid-column: span 1;
-  
-
-}
-.card-5 {
-  grid-column: span 2;
-  
-
-}
-
+/* Card-Styling */
 .pr {
   display: flex;
   margin-bottom: 14px;
@@ -157,9 +125,29 @@ testimonial {
   opacity: 10%;
 }
 
+/* Cards-grid control */
+.card-1 {
+  grid-column: span 2;
+}
+
+.card-2 {
+  grid-column: span 1;
+}
+.card-3 {
+  grid-row: span 2;
+ }
+.card-4 {
+  grid-column: span 1;
+}
+
+.card-5 {
+  grid-column: span 2;
+}
+
+
+
 @media screen and (max-width: 760px) {
  
-
   .inner-container {
     display: grid;
     display: flex;
@@ -173,9 +161,7 @@ testimonial {
     align-items: center;
     }
 
-
-  .card {
-    
+  .card {    
     min-width: 90vw !important;
     width: 100px ;
     min-height: 300;
